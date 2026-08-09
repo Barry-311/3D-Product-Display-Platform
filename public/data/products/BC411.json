@@ -1,0 +1,90 @@
+{
+  "id": "BC411",
+  "name": "Gate Assembly BC411 (STEP Demo)",
+  "productName": "BC411",
+  "version": "1.0",
+  "model": "models/BC411.stp",
+  "description": "Loads BC411.stp directly; the app auto-converts STEP to GLB at runtime (cached).",
+  "components": [
+    {
+      "id": "x310-01-01-01-01",
+      "objectName": "X310-01-01-01-01",
+      "name": "Main Housing X310-01-01-01-01",
+      "description": "Primary structural housing part from STEP assembly",
+      "specification": "Part No. X310-01-01-01-01",
+      "function": "Provides main enclosure structure for the drive assembly",
+      "failure": "Crack or deformation after impact",
+      "maintenance": "Inspect mounting surfaces and fastener torque"
+    },
+    {
+      "id": "x310-01-01-01-02",
+      "objectName": "X310-01-01-01-02",
+      "name": "Cover Plate X310-01-01-01-02",
+      "description": "Protective cover plate",
+      "specification": "Part No. X310-01-01-01-02",
+      "function": "Shields internal components",
+      "failure": "Loose fasteners / coating damage",
+      "maintenance": "Retighten screws and check gasket seating"
+    },
+    {
+      "id": "x310-01-01-01-03",
+      "objectName": "X310-01-01-01-03",
+      "name": "Bracket X310-01-01-01-03",
+      "description": "Mounting bracket",
+      "specification": "Part No. X310-01-01-01-03",
+      "function": "Positions adjacent assemblies",
+      "failure": "Misalignment after vibration",
+      "maintenance": "Check alignment marks and bolt preload"
+    },
+    {
+      "id": "x310-01-01-01-04",
+      "objectName": "X310-01-01-01-04",
+      "name": "Support X310-01-01-01-04",
+      "description": "Internal support member",
+      "specification": "Part No. X310-01-01-01-04",
+      "function": "Supports drive-related subassemblies",
+      "failure": "Wear at contact faces",
+      "maintenance": "Inspect contact wear and lubricate if specified"
+    },
+    {
+      "id": "x310-01-01-02-01",
+      "objectName": "X310-01-01-02-01",
+      "name": "Drive Subassembly X310-01-01-02-01",
+      "description": "Drive-related sub part",
+      "specification": "Part No. X310-01-01-02-01",
+      "function": "Transmits motion within the operator",
+      "failure": "Abnormal noise / binding",
+      "maintenance": "Check free movement and lubrication points"
+    },
+    {
+      "id": "x310-01-01-02-02",
+      "objectName": "X310-01-01-02-02",
+      "name": "Drive Subassembly X310-01-01-02-02",
+      "description": "Paired drive sub part",
+      "specification": "Part No. X310-01-01-02-02",
+      "function": "Works with X310-01-01-02-01 in drive path",
+      "failure": "Excessive clearance",
+      "maintenance": "Measure clearance and replace worn parts"
+    },
+    {
+      "id": "x310-01-01-03-01",
+      "objectName": "X310-01-01-03-01",
+      "name": "Linkage X310-01-01-03-01",
+      "description": "Linkage / mechanism part",
+      "specification": "Part No. X310-01-01-03-01",
+      "function": "Connects mechanism stages",
+      "failure": "Pin wear",
+      "maintenance": "Inspect pins and apply approved lubricant"
+    },
+    {
+      "id": "solid",
+      "objectName": "SOLID",
+      "name": "Solid Body",
+      "description": "Generic solid body exported from STEP",
+      "specification": "Unnamed SOLID entity",
+      "function": "Geometry placeholder from CAD export",
+      "failure": "N/A",
+      "maintenance": "Use as visual reference only"
+    }
+  ]
+}

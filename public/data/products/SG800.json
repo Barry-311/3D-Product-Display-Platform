@@ -1,0 +1,60 @@
+{
+  "id": "SG800",
+  "name": "Sliding Gate Operator SG800",
+  "productName": "SG800",
+  "version": "1.0",
+  "model": "models/gate.glb",
+  "description": "Medium-duty sliding gate operator for industrial and commercial entrances.",
+  "components": [
+    {
+      "id": "motor",
+      "objectName": "Motor",
+      "name": "Drive Motor",
+      "description": "24V DC motor",
+      "specification": "24V DC Motor, 800 kg rated load",
+      "function": "Controls gate movement",
+      "failure": "Overheating",
+      "maintenance": "Check voltage and lubrication"
+    },
+    {
+      "id": "control-board",
+      "objectName": "ControlBoard",
+      "name": "Control Board",
+      "description": "Main logic and safety controller",
+      "specification": "MCU-based control PCB with obstacle detection",
+      "function": "Processes remote/input signals and drives the motor",
+      "failure": "Relay contact wear or water ingress",
+      "maintenance": "Inspect connectors, keep enclosure sealed, verify firmware revision"
+    },
+    {
+      "id": "sensor",
+      "objectName": "Sensor",
+      "name": "Position Sensor",
+      "description": "Magnetic limit / position sensor",
+      "specification": "Hall-effect position feedback",
+      "function": "Detects open/close limits and travel position",
+      "failure": "Misalignment or debris interference",
+      "maintenance": "Clean sensor face and verify magnet gap"
+    },
+    {
+      "id": "gearbox",
+      "objectName": "Gearbox",
+      "name": "Gearbox",
+      "description": "Reduction gearbox for drive output",
+      "specification": "Helical reduction gearbox",
+      "function": "Converts motor speed to gate driving torque",
+      "failure": "Lubricant degradation or gear wear",
+      "maintenance": "Inspect oil level and listen for abnormal noise"
+    },
+    {
+      "id": "cover",
+      "objectName": "Cover",
+      "name": "Protective Cover",
+      "description": "Weather and impact cover",
+      "specification": "Powder-coated steel enclosure",
+      "function": "Protects internal drive components",
+      "failure": "Corrosion or loose fasteners",
+      "maintenance": "Tighten fasteners and touch up coating damage"
+    }
+  ]
+}

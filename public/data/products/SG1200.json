@@ -1,0 +1,60 @@
+{
+  "id": "SG1200",
+  "name": "Sliding Gate Operator SG1200",
+  "productName": "SG1200",
+  "version": "1.0",
+  "model": "models/gate.glb",
+  "description": "Heavy-duty sliding gate operator for wide industrial gates.",
+  "components": [
+    {
+      "id": "motor",
+      "objectName": "Motor",
+      "name": "Drive Motor",
+      "description": "High-torque 24V DC motor",
+      "specification": "24V DC Motor, 1200 kg rated load",
+      "function": "Controls heavy gate movement",
+      "failure": "Thermal overload under continuous cycle",
+      "maintenance": "Verify duty cycle, voltage stability, and cooling clearance"
+    },
+    {
+      "id": "control-board",
+      "objectName": "ControlBoard",
+      "name": "Control Board",
+      "description": "Industrial control PCB with dual safety inputs",
+      "specification": "Dual-channel safety logic board",
+      "function": "Coordinates motor drive, remotes, and safety loops",
+      "failure": "Input short or failed safety loop",
+      "maintenance": "Test photocell and edge inputs monthly"
+    },
+    {
+      "id": "sensor",
+      "objectName": "Sensor",
+      "name": "Position Sensor",
+      "description": "Absolute position encoder assembly",
+      "specification": "Magnetic absolute encoder",
+      "function": "Provides precise travel feedback for soft-stop",
+      "failure": "Encoder drift after mechanical shock",
+      "maintenance": "Re-calibrate limits after mechanical service"
+    },
+    {
+      "id": "gearbox",
+      "objectName": "Gearbox",
+      "name": "Gearbox",
+      "description": "Heavy-duty reduction gearbox",
+      "specification": "Reinforced helical gearbox",
+      "function": "Delivers high torque to the rack pinion",
+      "failure": "Bearing noise or oil leak",
+      "maintenance": "Check seals and replace lubricant per schedule"
+    },
+    {
+      "id": "cover",
+      "objectName": "Cover",
+      "name": "Protective Cover",
+      "description": "Reinforced outdoor enclosure",
+      "specification": "IP54 powder-coated steel housing",
+      "function": "Shields drive unit from weather and impact",
+      "failure": "Gasket aging",
+      "maintenance": "Replace gaskets and verify drainage vents"
+    }
+  ]
+}

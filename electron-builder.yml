@@ -1,0 +1,37 @@
+appId: com.company.gatedigitaltwin
+productName: Gate Digital Twin Viewer
+directories:
+  output: release
+files:
+  - dist/**/*
+  - dist-electron/**/*
+  - node_modules/occt-import-js/**/*
+  - package.json
+asarUnpack:
+  - node_modules/occt-import-js/**/*
+extraResources:
+  - from: public/models
+    to: models
+  - from: public/data
+    to: data
+  - from: public/documents
+    to: documents
+  - from: node_modules/occt-import-js/dist
+    to: occt-import-js
+win:
+  target:
+    - target: portable
+      arch:
+        - x64
+    - target: nsis
+      arch:
+        - x64
+  artifactName: GateDigitalTwinViewer-${version}-${arch}.${ext}
+  signAndEditExecutable: false
+portable:
+  artifactName: GateDigitalTwinViewer.exe
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true

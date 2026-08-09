@@ -1,0 +1,17 @@
+[
+  {
+    "product": "BC411",
+    "version": "1.0",
+    "model": "BC411.glb"
+  },
+  {
+    "product": "SG800",
+    "version": "1.0",
+    "model": "gate.glb"
+  },
+  {
+    "product": "SG1200",
+    "version": "1.0",
+    "model": "gate.glb"
+  }
+]

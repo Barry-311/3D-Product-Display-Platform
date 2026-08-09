@@ -1,0 +1,18 @@
+{
+  "_comment": "MVP product knowledge lives under public/data/. This file documents the schema used by ProductDataManager.",
+  "id": "SG800",
+  "name": "Sliding Gate Operator SG800",
+  "productName": "SG800",
+  "version": "1.0",
+  "model": "models/gate.glb",
+  "components": [
+    {
+      "id": "motor",
+      "objectName": "Motor",
+      "name": "Drive Motor",
+      "description": "24V DC motor",
+      "failure": "Overheat",
+      "maintenance": "Check power supply"
+    }
+  ]
+}

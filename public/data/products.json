@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "id": "BC411",
+      "name": "Gate Assembly BC411 (STEP Demo)",
+      "productName": "BC411",
+      "version": "1.0",
+      "dataFile": "products/BC411.json"
+    },
+    {
+      "id": "SG800",
+      "name": "Sliding Gate Operator SG800",
+      "productName": "SG800",
+      "version": "1.0",
+      "dataFile": "products/SG800.json"
+    },
+    {
+      "id": "SG1200",
+      "name": "Sliding Gate Operator SG1200",
+      "productName": "SG1200",
+      "version": "1.0",
+      "dataFile": "products/SG1200.json"
+    }
+  ]
+}
