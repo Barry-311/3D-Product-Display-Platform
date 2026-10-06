@@ -8,6 +8,11 @@ import path from 'node:path'
 import { spawnSync } from 'node:child_process'
 import { fileURLToPath } from 'node:url'
 
+if (process.platform !== 'win32') {
+  console.error('package:exe is Windows-only. On macOS run: npm run package:mac')
+  process.exit(1)
+}
+
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..')
 const releaseDir = path.join(root, 'release')
 const targetPath = path.join(root, 'GateDigitalTwinViewer.exe')

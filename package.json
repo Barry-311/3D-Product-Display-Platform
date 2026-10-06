@@ -8,11 +8,15 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "start": "vite",
     "dev": "vite",
     "build": "vite build",
     "build:win": "npm run build && electron-builder --win --x64",
+    "build:mac": "npm run build && electron-builder --mac",
+    "package": "node scripts/package-desktop.mjs",
     "package:exe": "npm run build && electron-builder --win dir --x64 && node scripts/copy-root-exe.mjs",
     "package:portable": "npm run build && electron-builder --win portable --x64 && node scripts/copy-root-exe.mjs",
+    "package:mac": "npm run build && electron-builder --mac dir && node scripts/copy-root-app.mjs",
     "preview": "vite preview",
     "generate:model": "node scripts/generate-placeholder-glb.mjs",
     "convert:stp": "node scripts/convert-stp-to-glb.mjs"
@@ -97,6 +101,16 @@
       "allowToChangeInstallationDirectory": true,
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true
+    },
+    "mac": {
+      "category": "public.app-category.productivity",
+      "identity": null,
+      "gatekeeperAssess": false,
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "artifactName": "GateDigitalTwinViewer-${version}-${arch}.${ext}"
     }
   }
 }

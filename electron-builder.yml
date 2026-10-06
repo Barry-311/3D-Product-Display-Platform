@@ -35,3 +35,11 @@ nsis:
   allowToChangeInstallationDirectory: true
   createDesktopShortcut: true
   createStartMenuShortcut: true
+mac:
+  category: public.app-category.productivity
+  identity: null
+  gatekeeperAssess: false
+  target:
+    - dmg
+    - zip
+  artifactName: GateDigitalTwinViewer-${version}-${arch}.${ext}

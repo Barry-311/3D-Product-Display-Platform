@@ -1,10 +1,20 @@
 # Gate Digital Twin Viewer — 使用说明
 
-## 直接运行（无需 npm）
+## 直接运行
 
-双击项目根目录下的：
+Windows 和 macOS 都可以先安装依赖再启动：
 
-`F:\3D_Display_Platform\3D-Product-Display-Platform\GateDigitalTwinViewer.exe`
+```bash
+npm install
+npm start
+```
+
+也可以双击项目根目录的 `start.bat`（Windows）或 `start.command`（macOS）。
+
+打包成可双击的应用：
+
+- Windows：`npm run package:exe`，然后双击 `GateDigitalTwinViewer.exe`
+- macOS：`npm run package:mac`，然后双击 `Gate Digital Twin Viewer.app`
 
 首次打开 **BC411** 时，程序会自动把 `BC411.stp` 转成 GLB 并缓存，之后再打开会更快。
 
@@ -33,16 +43,16 @@
 
 ```bash
 npm install
-npm run dev
+npm start
 ```
 
-重新生成根目录 exe：
+重新生成可双击的应用（按当前系统）：
 
 ```bash
-npm run package:exe
+npm run package
 ```
 
-会构建 portable 包并复制为根目录 `GateDigitalTwinViewer.exe`。
+Windows 会得到根目录 `GateDigitalTwinViewer.exe`，macOS 会得到根目录 `Gate Digital Twin Viewer.app`。
 
 ---
 
